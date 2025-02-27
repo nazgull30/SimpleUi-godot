@@ -1,0 +1,61 @@
+[gd_scene load_steps=7 format=3 uid="uid://brit1bvml1l1k"]
+
+[ext_resource type="Script" path="res://addons/VContainer/Unity/LifetimeScope.cs" id="1_vnh8g"]
+[ext_resource type="Script" path="res://Src/SampleUiMonoInstaller.cs" id="2_t25qe"]
+[ext_resource type="Script" path="res://addons/SimpleUi/SimpleUiInstaller.cs" id="3_8ioxf"]
+[ext_resource type="Script" path="res://Src/SimpleUiWindow.cs" id="3_cqk12"]
+[ext_resource type="Script" path="res://Src/EntryPoint.cs" id="4_noenx"]
+
+[sub_resource type="LabelSettings" id="LabelSettings_fj8kx"]
+font_size = 25
+
+[node name="SampeScope" type="Node" node_paths=PackedStringArray("_monoInstallers", "autoInjectGameObjects")]
+script = ExtResource("1_vnh8g")
+_scriptableObjectInstallers = Array[Resource]([])
+_monoInstallers = [NodePath("SimpleUiInstaller"), NodePath("SampleUiMonoInstaller")]
+autoInjectGameObjects = [NodePath("EntryPoint")]
+
+[node name="SimpleUiInstaller" type="Node" parent="."]
+script = ExtResource("3_8ioxf")
+
+[node name="SampleUiMonoInstaller" type="Node" parent="." node_paths=PackedStringArray("_simpleUiWindow")]
+script = ExtResource("2_t25qe")
+_simpleUiWindow = NodePath("../Control/SimpleUiWindow")
+
+[node name="Control" type="Control" parent="."]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="SimpleUiWindow" type="Control" parent="Control" node_paths=PackedStringArray("Label")]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+size_flags_horizontal = 4
+script = ExtResource("3_cqk12")
+Label = NodePath("Label")
+
+[node name="Label" type="Label" parent="Control/SimpleUiWindow"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -20.0
+offset_top = -11.5
+offset_right = 20.0
+offset_bottom = 11.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Hi"
+label_settings = SubResource("LabelSettings_fj8kx")
+
+[node name="EntryPoint" type="Node" parent="."]
+script = ExtResource("4_noenx")

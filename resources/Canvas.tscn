@@ -1,0 +1,5 @@
+[gd_scene format=3 uid="uid://bkbn801tmns5u"]
+
+[node name="Canvas" type="CanvasLayer"]
+offset = Vector2(2.08165e-12, 2.08165e-12)
+transform = Transform2D(1, 0, 0, 1, 2.08165e-12, 2.08165e-12)

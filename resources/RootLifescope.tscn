@@ -1,0 +1,18 @@
+[gd_scene load_steps=5 format=3 uid="uid://csxky2elfi6oo"]
+
+[ext_resource type="Script" path="res://addons/VContainer/Unity/RootLifetimeScope.cs" id="1_lnmce"]
+[ext_resource type="PackedScene" uid="uid://brit1bvml1l1k" path="res://scenes/Sample.tscn" id="2_2jlub"]
+[ext_resource type="Script" path="res://addons/VContainer/Unity/VContainerSettings.cs" id="2_f65hl"]
+
+[sub_resource type="Resource" id="Resource_b7l7o"]
+script = ExtResource("2_f65hl")
+EnableDiagnostics = false
+DisableScriptModifier = false
+
+[node name="RootLifetimeScope" type="Node" node_paths=PackedStringArray("_monoInstallers", "autoInjectGameObjects")]
+script = ExtResource("1_lnmce")
+_sceneAfter = ExtResource("2_2jlub")
+_settings = SubResource("Resource_b7l7o")
+_scriptableObjectInstallers = Array[Resource]([])
+_monoInstallers = Array[Resource]([])
+autoInjectGameObjects = Array[Resource]([])

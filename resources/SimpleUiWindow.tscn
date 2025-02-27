@@ -1,0 +1,14 @@
+[gd_scene load_steps=2 format=3 uid="uid://cnhkvqpt8c2vc"]
+
+[ext_resource type="Script" path="res://Src/SimpleUiWindow.cs" id="1_wgy2g"]
+
+[node name="SimpleUiWindow" type="Control" node_paths=PackedStringArray("Label")]
+layout_mode = 3
+anchors_preset = 0
+size_flags_horizontal = 4
+script = ExtResource("1_wgy2g")
+Label = NodePath("Label")
+
+[node name="Label" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
