@@ -14,10 +14,17 @@ namespace SimpleUi.Abstracts
 
 		private UiControllerState _currentState;
 
-		[Inject] protected readonly T View;
+		protected T View { private set; get; }
 		public bool IsActive { get; private set; }
 		public bool InFocus { get; private set; }
 
+        [Inject]
+        public void SetView(T view, IObjectResolver resolver)
+        {
+            View = view;
+            resolver.Inject(view);
+        }
+		
 		public void SetState(UiControllerState state)
 		{
 			_currentState = state;
