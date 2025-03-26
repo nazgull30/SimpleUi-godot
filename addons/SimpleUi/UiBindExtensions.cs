@@ -1,7 +1,7 @@
 ﻿using Godot;
 using SimpleUi.Interfaces;
 using VContainer;
-using VContainer.Unity;
+using VContainer.Godot;
 
 namespace SimpleUi
 {
@@ -16,7 +16,7 @@ namespace SimpleUi
 				.UnderTransform(parent)
 				.OnInstantiated((o) => ((Control) o).Hide());
 		}
-		
+
 		public static void BindUiView<TController, TView>(this IContainerBuilder container, TView view)
 			where TView : IUiView
 			where TController : IUiController
@@ -30,7 +30,7 @@ namespace SimpleUi
 			where T : IWindowsController, IInitializable
 		{
 			//TODO: BindInitializableExecutionOrder
-			// container.BindInitializableExecutionOrder<T>(-1000); 
+			// container.BindInitializableExecutionOrder<T>(-1000);
 			container.RegisterEntryPoint<T>().AsSelf().WithParameter(windowLayer);
 			var windowState = new WindowState();
 			container.RegisterInstance(windowState);

@@ -3,7 +3,7 @@ namespace SimpleUi.Src;
 using Godot;
 using TextAndQuest.Game.Ui;
 using VContainer;
-using VContainer.Unity;
+using VContainer.Godot;
 
 public partial class SampleUiMonoInstaller : MonoInstaller
 {

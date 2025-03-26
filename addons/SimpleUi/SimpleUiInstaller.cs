@@ -1,6 +1,6 @@
 using Godot;
 using VContainer;
-using VContainer.Unity;
+using VContainer.Godot;
 
 namespace SimpleUi
 {

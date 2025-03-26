@@ -4,7 +4,7 @@ using Godot;
 using SimpleUi;
 using SimpleUi.Src;
 using VContainer;
-using VContainer.Unity;
+using VContainer.Godot;
 
 //just an example. in Godot use MonoInstaller
 [GlobalClass]

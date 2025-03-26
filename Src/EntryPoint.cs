@@ -2,7 +2,7 @@ namespace SimpleUi.Src;
 
 using Godot;
 using TextAndQuest.Game.Ui;
-using VContainer.Unity;
+using VContainer;
 
 public partial class EntryPoint : Node, IInitializable
 {

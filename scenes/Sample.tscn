@@ -1,10 +1,10 @@
 [gd_scene load_steps=7 format=3 uid="uid://brit1bvml1l1k"]
 
-[ext_resource type="Script" path="res://addons/VContainer/Unity/LifetimeScope.cs" id="1_vnh8g"]
-[ext_resource type="Script" path="res://Src/SampleUiMonoInstaller.cs" id="2_t25qe"]
-[ext_resource type="Script" path="res://addons/SimpleUi/SimpleUiInstaller.cs" id="3_8ioxf"]
-[ext_resource type="Script" path="res://Src/SimpleUiWindow.cs" id="3_cqk12"]
-[ext_resource type="Script" path="res://Src/EntryPoint.cs" id="4_noenx"]
+[ext_resource type="Script" uid="uid://dxouiqqu217qq" path="res://addons/VContainer/LifetimeScope.cs" id="1_vnh8g"]
+[ext_resource type="Script" uid="uid://d0e5uc3gqfua5" path="res://Src/SampleUiMonoInstaller.cs" id="2_t25qe"]
+[ext_resource type="Script" uid="uid://b4s41pl3frwvv" path="res://addons/SimpleUi/SimpleUiInstaller.cs" id="3_8ioxf"]
+[ext_resource type="Script" uid="uid://dsohhacrh6pee" path="res://Src/SimpleUiWindow.cs" id="3_cqk12"]
+[ext_resource type="Script" uid="uid://bwj6jry18tb37" path="res://Src/EntryPoint.cs" id="4_noenx"]
 
 [sub_resource type="LabelSettings" id="LabelSettings_fj8kx"]
 font_size = 25

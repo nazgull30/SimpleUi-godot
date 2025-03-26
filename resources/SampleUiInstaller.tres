@@ -1,7 +1,7 @@
 [gd_resource type="Resource" script_class="SampleUiPrefabInstaller" load_steps=4 format=3 uid="uid://b7d0l4pcay1ss"]
 
-[ext_resource type="Script" path="res://Src/SampleUiPrefabInstaller.cs" id="1_fygv8"]
-[ext_resource type="PackedScene" uid="uid://buj5po8qahn4" path="res://resources/Canvas.tscn" id="1_j02gs"]
+[ext_resource type="Script" uid="uid://dgnv6rd4y4u61" path="res://Src/SampleUiPrefabInstaller.cs" id="1_fygv8"]
+[ext_resource type="PackedScene" uid="uid://bkbn801tmns5u" path="res://resources/Canvas.tscn" id="1_j02gs"]
 [ext_resource type="PackedScene" uid="uid://cnhkvqpt8c2vc" path="res://resources/SimpleUiWindow.tscn" id="2_6mh7q"]
 
 [resource]

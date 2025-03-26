@@ -2,7 +2,7 @@ namespace SimpleUi;
 
 using SimpleUi.Abstracts;
 using SimpleUi.Src;
-using VContainer.Unity;
+using VContainer;
 
 public partial class SimpleUiController : UiController<SimpleUiWindow>, IInitializable
 {
