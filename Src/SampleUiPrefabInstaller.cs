@@ -23,6 +23,6 @@ public partial class SampleUiPrefabInstaller : ScriptableObjectInstaller
 
         builder.BindUiView<SimpleUiController, SimpleUiWindow>(_simpleUiWindow, canvasView);
 
-        builder.BindWindowsController<WindowsController>(EWindowLayer.Local);
+        // builder.BindWindowsController<WindowsController>(EWindowLayer.Local);
     }
 }

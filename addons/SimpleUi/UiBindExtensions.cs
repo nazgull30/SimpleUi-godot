@@ -25,15 +25,5 @@ namespace SimpleUi
 			container.RegisterInstance(view).AsImplementedInterfaces().AsSelf();
 			view.Hide();
 		}
-
-		public static void BindWindowsController<T>(this IContainerBuilder container, EWindowLayer windowLayer)
-			where T : IWindowsController, IInitializable
-		{
-			//TODO: BindInitializableExecutionOrder
-			// container.BindInitializableExecutionOrder<T>(-1000);
-			container.RegisterEntryPoint<T>().AsSelf().WithParameter(windowLayer);
-			var windowState = new WindowState();
-			container.RegisterInstance(windowState);
-		}
 	}
 }
